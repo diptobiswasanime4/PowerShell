@@ -38,3 +38,20 @@ if ($age -ge 18) {
 } else {
     Write-Host "$fullname is a kid."
 }
+
+$fruit = "apple"
+
+switch ($fruit) {
+    "mango" {
+        Write-Host "It's a mango."
+    }
+    "apple" {
+        Write-Host "It's an apple."
+    }
+    "banana" {
+        Write-Host "It's a banana."
+    }
+    default {
+        Write-Host "It's a different fruit."
+    }
+}
