@@ -22,6 +22,7 @@ $fullname = $name + $lastname
 
 Write-Host "Full name: $fullname"
 
+# logical and comparison operators
 $true -and $false
 $true -or $false
 10 -gt 5
@@ -31,6 +32,7 @@ $true -or $false
 10 -eq 5
 10 -ne 5
 
+# if-else
 if ($age -ge 18) {
     Write-Host "$fullname is an adult."
 } elseif ($age -gt 12) {
@@ -41,6 +43,7 @@ if ($age -ge 18) {
 
 $fruit = "apple"
 
+# switch
 switch ($fruit) {
     "mango" {
         Write-Host "It's a mango."
@@ -55,3 +58,4 @@ switch ($fruit) {
         Write-Host "It's a different fruit."
     }
 }
+# loops
