@@ -59,3 +59,10 @@ switch ($fruit) {
     }
 }
 # loops
+for ($i = 1; $i -le 5; $i++) {
+    Write-Host "i = $i"
+}
+
+foreach ($subject in $subjects) {
+    Write-Host "Subject: $subject"
+}
