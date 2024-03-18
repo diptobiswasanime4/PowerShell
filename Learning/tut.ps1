@@ -1,3 +1,9 @@
+# commands
+Get-Process
+Get-Service
+Get-Help
+Get-ChildItem
+
 # hello world
 Write-Host "Hello World"
 
@@ -66,3 +72,20 @@ for ($i = 1; $i -le 5; $i++) {
 foreach ($subject in $subjects) {
     Write-Host "Subject: $subject"
 }
+
+function Greet {
+    Write-Output "Hello World"
+}
+
+Greet
+
+function CalculateArea {
+    param (
+        [double]$Length,
+        [double]$Width
+    )
+    $Area = $Length * $Width
+    Write-Output "The area of the rectangle = $Area sq. units."
+}
+
+CalculateArea -Length 5 -Width 3
